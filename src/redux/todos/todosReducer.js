@@ -1,6 +1,7 @@
 /* eslint-disable no-case-declarations */
 
-import { initialState } from "./InitialState";
+
+import initialState from "./InitialState";
 import { ADDED, ALL_COMPLETED, CLEAR_COMPELTED, COLOR_SELECTED, DELETED, TOGGLED } from "./actionTypes";
 
 
