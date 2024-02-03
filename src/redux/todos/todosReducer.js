@@ -28,7 +28,7 @@ const todosReducer = (state= initialState, action)=> {
                 }
                  return {
                     ...todo,
-                    completed: !completed,
+                    completed: !todo.completed,
                  }
             })
     
@@ -58,7 +58,7 @@ const todosReducer = (state= initialState, action)=> {
             
     
         default:
-            break;
+            return state;
     }
 }
 
