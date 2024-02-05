@@ -2,7 +2,7 @@
     {
         id: 0,
         text: 'learn react JS',
-        completed: true
+        completed: false
     },
     {
         id: 1,
