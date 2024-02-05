@@ -30,7 +30,7 @@ const Todo = ({ todo }) => {
           <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
         </svg>}
       </div>
-      <div className="select-none flex-1 line-through">{text}</div>
+      <div className={`select-none flex-1 ${completed && 'line-through'}`}>{text}</div>
       <div onClick={()=> handleSelectColor(id,'green')} className={`flex-shrink-0 h-4 w-4 rounded-full border-2 ml-auto cursor-pointer border-green-500 hover:bg-green-500 ${color === 'green' && 'bg-green-500'}`} />
 
 
