@@ -3,7 +3,6 @@
 
 This Is a Simple Todo Application , 
 
-Link Will be Added Here..
-Coming Soooon.........
+
 
 
