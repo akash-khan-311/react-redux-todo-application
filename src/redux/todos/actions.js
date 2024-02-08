@@ -4,6 +4,7 @@ import {
   CLEAR_COMPELTED,
   COLOR_SELECTED,
   DELETED,
+  LOADED,
   TOGGLED,
 } from "./actionTypes";
 
@@ -14,6 +15,12 @@ export const added = (todoText) => {
   };
 };
 
+export const loaded = (todos) => {
+  return {
+    type: LOADED,
+    payload: todos,
+  };
+};
 export const toggled = (todoId) => {
   return {
     type: TOGGLED,
