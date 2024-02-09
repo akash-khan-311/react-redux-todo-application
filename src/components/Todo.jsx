@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
 import { useDispatch } from "react-redux";
 import cancelImg from "../assets/images/cancel.png";
-import { colorSelected, deleted } from "../redux/todos/actions";
+import {  deleted } from "../redux/todos/actions";
 import updateStatus from "../redux/todos/thunk/updateStatus";
+import updateColor from "../redux/todos/thunk/updateColor";
 const Todo = ({ todo }) => {
   const dispatch = useDispatch();
   const { id, text, completed, color } = todo;
@@ -12,7 +13,7 @@ const Todo = ({ todo }) => {
   };
   // prioroty or color select handle here
   const handleSelectColor = (todoId, color) => {
-    dispatch(colorSelected(todoId, color));
+    dispatch(updateColor(todoId, color));
   };
 
   // task or todo deleted handle here
